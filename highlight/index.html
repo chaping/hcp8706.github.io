@@ -73,13 +73,13 @@ $(document).ready(function (){
 	$("#gutter").click(function (){
 		render();
 	});
-	$("#syntaxhh").popover({
+	/*$("#syntaxhh").popover({
 		title:"SyntaxHighLighter",
 		content:"SyntaxHighlighter是一套在浏览器上对各种代码进行语法着色的独立 JavaScript库。",
 		placement:"bottom"
 	});
 	$('#to_html').cookieBind();
-	$('#gutter').cookieBind();
+	$('#gutter').cookieBind();*/
 });
 
 function render(){
@@ -91,8 +91,8 @@ function render(){
 	$("#result_div pre").addClass(class_v);
 	SyntaxHighlighter.highlight();
 	toHTML();
-	jQuery.cookies.set("style_type",$(':radio[checked="checked"]').val(),cookieOptions);
-	jQuery.cookies.set("lang_type",$('#code_type').val(),cookieOptions);
+	/*jQuery.cookies.set("style_type",$(':radio[checked="checked"]').val(),cookieOptions);
+	jQuery.cookies.set("lang_type",$('#code_type').val(),cookieOptions);*/
 }
 function toHTML(){
 	var html="<link rel='stylesheet' type='text/css' href='http://www.osctools.net";
