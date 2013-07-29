@@ -90,12 +90,12 @@ function toHTML(){
 	}
 }
 </script>
-<div id="mainContent" class="tool_content wrapper">
-	<div class="toolName">在线代码着色(采用<a id="syntaxhh" href="http://www.oschina.net/p/syntaxhighlighter">SyntaxHighlighter</a>实现)<a data-toggle="modal" href="#advice" style="float:right;text-decoration:none;"><span class="badge badge-important"><i class="icon-envelope icon-white"></i> Feedback</span></a></div>
+<div id="mainContent" class="tool_content wrapper" style="width:1000px; margin:0 auto;">
+	<div class="toolName">在线代码着色(采用<a id="syntaxhh" href="http://www.oschina.net/p/syntaxhighlighter">SyntaxHighlighter</a>实现)</div>
 	<div class="toolUsing clearfix">
 	</div>
 	<div class="topBar">
-    <textarea id="code_source" style="width:98%; overflow:auto; height:150px;">
+    <textarea id="code_source" style="width:98%; overflow:auto; height:150px; box-shadow:0 1px 1px inset rgba(0,0,0,0.075); border-radius:3px;">
 /* ---示例代码----*/
 
 function echo (){
@@ -152,7 +152,7 @@ function echo (){
 	</div>
 	<div class="bottomBar clearfix">
 		<div id='html_div'>
-			<textarea id='html' onclick='this.focus();this.select();'>
+			<textarea id='html' onclick='this.focus();this.select();' style="width:100%; overflow:auto; height:100px; box-shadow:0 1px 1px inset rgba(0,0,0,0.075); border-radius:3px;">
 			</textarea>
 		</div>
 		<div id="result_div">
