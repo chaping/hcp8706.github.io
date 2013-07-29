@@ -46,7 +46,7 @@ function change(type){    //更改样式
 } 
 
 $(document).ready(function (){
-	if(jQuery.cookies.get("lang_type")){
+	/*if(jQuery.cookies.get("lang_type")){
 		$("#code_type").val(jQuery.cookies.get("lang_type"));
 	}
 	$('#to_html').cookieFill(cookieOptions);
@@ -55,7 +55,7 @@ $(document).ready(function (){
 		$(":radio").removeAttr("checked");
 		$(":radio[value=" + jQuery.cookies.get("style_type") + "]").attr("checked","checked");
 		change(jQuery.cookies.get("style_type"));
-	}
+	}*/
 	$("#html_div").hide();
 	SyntaxHighlighter.all();
 	$(":radio").click(function (){
