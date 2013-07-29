@@ -6,9 +6,9 @@
 <script src="../statics/js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
-<link id="css" rel="stylesheet" type="text/css" href="css/syntaxhighlighter_3.0.83/styles/shCoreDefault.css"/>
-<script src="js/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
-<script src="js/syntaxhighlighter_3.0.83/scripts/shBrushAll.js"></script>
+<link id="css" rel="stylesheet" type="text/css" href="css/shCoreDefault.css"/>
+<script src="js/shCore.js"></script>
+<script src="js/shBrushAll.js"></script>
 <script>
  var cookieOptions = {
     hoursToLive: 30 * 24
@@ -27,21 +27,21 @@ function encodeHtml(s){
 function change(type){    //更改样式
     var css=document.getElementById("css"); 
     if ("default"==type)
-    	css.setAttribute("href","css/syntaxhighlighter_3.0.83/styles/shCoreDefault.css"); 
+    	css.setAttribute("href","css/shCoreDefault.css"); 
     if ("emacs"==type)
-    	css.setAttribute("href","css/syntaxhighlighter_3.0.83/styles/shCoreEmacs.css"); 
+    	css.setAttribute("href","css/shCoreEmacs.css"); 
 	if ("django"==type)
-    	css.setAttribute("href","css/syntaxhighlighter_3.0.83/styles/shCoreDjango.css");
+    	css.setAttribute("href","css/shCoreDjango.css");
 	if ("eclipse"==type)
-    	css.setAttribute("href","css/syntaxhighlighter_3.0.83/styles/shCoreEclipse.css");
+    	css.setAttribute("href","css/shCoreEclipse.css");
 	if ("fadetogrey"==type)
-    	css.setAttribute("href","css/syntaxhighlighter_3.0.83/styles/shCoreFadeToGrey.css");
+    	css.setAttribute("href","css/shCoreFadeToGrey.css");
 	if ("mdultra"==type)
-    	css.setAttribute("href","css/syntaxhighlighter_3.0.83/styles/shCoreMDUltra.css");
+    	css.setAttribute("href","css/shCoreMDUltra.css");
 	if ("midnight"==type)
-    	css.setAttribute("href","css/syntaxhighlighter_3.0.83/styles/shCoreMidnight.css");
+    	css.setAttribute("href","css/shCoreMidnight.css");
 	if ("rdark"==type)
-    	css.setAttribute("href","css/syntaxhighlighter_3.0.83/styles/shCoreRDark.css");
+    	css.setAttribute("href","css/shCoreRDark.css");
 	render();
 } 
 
