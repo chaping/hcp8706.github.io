@@ -46,16 +46,6 @@ function change(type){    //更改样式
 } 
 
 $(document).ready(function (){
-	/*if(jQuery.cookies.get("lang_type")){
-		$("#code_type").val(jQuery.cookies.get("lang_type"));
-	}
-	$('#to_html').cookieFill(cookieOptions);
-	$('#gutter').cookieFill(cookieOptions);
-	if(jQuery.cookies.get("style_type")){
-		$(":radio").removeAttr("checked");
-		$(":radio[value=" + jQuery.cookies.get("style_type") + "]").attr("checked","checked");
-		change(jQuery.cookies.get("style_type"));
-	}*/
 	$("#html_div").hide();
 	SyntaxHighlighter.all();
 	$(":radio").click(function (){
@@ -73,13 +63,6 @@ $(document).ready(function (){
 	$("#gutter").click(function (){
 		render();
 	});
-	/*$("#syntaxhh").popover({
-		title:"SyntaxHighLighter",
-		content:"SyntaxHighlighter是一套在浏览器上对各种代码进行语法着色的独立 JavaScript库。",
-		placement:"bottom"
-	});
-	$('#to_html').cookieBind();
-	$('#gutter').cookieBind();*/
 });
 
 function render(){
@@ -91,8 +74,6 @@ function render(){
 	$("#result_div pre").addClass(class_v);
 	SyntaxHighlighter.highlight();
 	toHTML();
-	/*jQuery.cookies.set("style_type",$(':radio[checked="checked"]').val(),cookieOptions);
-	jQuery.cookies.set("lang_type",$('#code_type').val(),cookieOptions);*/
 }
 function toHTML(){
 	var html="<link rel='stylesheet' type='text/css' href='http://www.osctools.net";
@@ -114,7 +95,7 @@ function toHTML(){
 	<div class="toolUsing clearfix">
 	</div>
 	<div class="topBar">
-    <textarea id="code_source">
+    <textarea id="code_source" style="width:98%; overflow:auto; height:150px;">
 /* ---示例代码----*/
 
 function echo (){
